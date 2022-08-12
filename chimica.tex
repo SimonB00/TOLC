@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+
+\title{Chimica}
+\author{Simone Balducci}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Moli}
+La mole è la grandezza fisica che quantifica la quantità di sostanza (da non confondere con la massa, che quantifica la quantità di materia). In una mole di sostanza è contenuto un numero di 
+Avogadro di molecole (ovvero $6.022 \times 10^{23}$). \\
+La massa di sostanza e il numero di moli sono legate dalla massa molare, caratteristica per ogni elemento chimico. L'unità di misura della massa molare (o massa molecolare, che nella pratica è 
+la stessa cosa) è $g/mol$. \\ \\
+\textbf{Esempio} \\
+Si consideri una quantità di $2\,g$ di monossido di carbonio, $CO$. La massa molare di un composto si ottiene sommando le masse molari dei singoli elementi (eventualmente moltiplicate per il 
+rispettivo pedice). \\
+Per il monossido di carbonio quindi la massa molare è $12 + 16 = 28\,g/mol$. Si può quindi calcolare il numero di moli:
+$$
+    n = \frac{m}{Mm} = \frac{12\,g}{28\,g/mol} = 0.43\,mol 
+$$
+Una volta ottenuto il numero di moli della quantità di materia considerata, si può calcolare il numero di molecole:
+$$
+    N = n \times N_A = 0.43 \times 6.022 \times 10^{23} \approx 2.6\times 10^{23} \ molecole
+$$
+\textbf{Esercizio}
+A quante moli corrispondono $4\,ml$ di un composto avente massa molecolare pari a $50\,g/mol$ e densità $1.25\,g/ml$? \\ \\ 
+Per calcolare il numero di moli è necessaria la massa. Questa non viene fornita, ma viene fornito il volume del campione, che unito alla densità ci permette di calcolare la massa:
+$$
+    \rho = \frac{m}{V} \rightarrow m = \rho\cdot V = 4\,ml \cdot 1.25\,g/mol = 5\,g
+$$
+A questo punto è sufficiente dividere il valore della massa per la massa molare, ottenendo così il numero di moli:
+$$
+    n = \frac{5\,g}{50\,g/mol} = 0.1\,mol
+$$
+\section{Reazioni chimiche}
+Le reazioni chimiche sono processi in cui la natura dei componenti coinvolti cambia. \\
+Le reazioni per poter avvenire devono essere bilanciate, ovvero il numero di atomi di ogni singolo elemento (e degli elettroni nelle redox) deve essere invariato prima e dopo il processo. Questo 
+deriva dal principio di Lavoisier, che sancisce che la somma delle masse dei reagenti deve essere sempre uguale alla somma delle masse dei prodotti. \\
+Bilanciare una reazione significa calcolare i coefficienti stechiometrici, ovvero quei numeri che determinano il rapporto delle molecole, e che fanno si che ogni componente sia bilanciato. \\
+Quanto si bilancia una reazione si segue un ordine preciso:
+\begin{itemize}
+    \item Metalli
+    \item Semimetalli
+    \item Ossigeno
+    \item Idrogeno
+\end{itemize}
+Questo ordine velocizza di molto il calcolo dei coefficienti stechiometrici, ma a volte risulta necessario ribilanciare degli elementi già bilanciati in precedenza dopo aver bilanciato i 
+successivi. \\ \\
+\textbf{Esempio}
+$$
+    NO_2 + H_2O \rightarrow HNO_3 + NO
+$$
+In questa reazione non sono presenti metalli, quindi si passa all'azoto. Per bilanciare gli azoti si potrebbe mettere un 2 davanti a $NO_2$. Si nota tuttavia che per bilanciare gli idrogeni 
+è necessario mettere un 2 davanti all'$HNO_3$. Questo porta il numero totale di azoti tra i prodotti a 3, quindi il coefficiente stechiometrico del $NO_2$ è 3. Si nota infine che gli ossigeni sono
+bilanciati, quindi la reazione è bilanciata.
+$$
+    3NO_2 + H_2O \rightarrow 2HNO_3 + NO
+$$
+\subsection{Reazioni redox}
+Le reazioni redox sono reazioni in cui alcuni elementi cambiano numero di ossidazione. Questo implica che ci sia uno scambio di elettroni, che devono essere bilanciati come gli altri elementi. \\ \\
+\textbf{Esempio}
+$$
+    Arriva
+$$
+\section{Soluzioni}
+Quando una sostanza (il soluto) viene disciolta in un solvente, come l'acqua, si ottiene una soluzione. Per le soluzioni si definisce una grandezza fisica, la concentrazione, uguale al rapporto tra 
+la quantità di soluto disciolta e la quantità di solvente. \\
+L'unità di misura più comune per la concentrazione è la molarità. La molarità è definita come il rapporto tra il numero di moli del soluto e il volume in litri di solvente in cui il soluto è 
+disciolto.
+$$
+    M = \frac{n}{V(l)_{slz}}
+$$
+\textbf{Esempio} \\
+Sciogliendo $12\,g$ di sale da cucina, $NaCl$, in $100\,ml$ di acqua si ottiene una soluzione avente concentrazione di $2\,M$. \\
+Infatti, calcolando il numero di moli si trova che questo vale
+$$
+    n = \frac{12\,g}{58.45\,g/mol} = 0.205\,mol
+$$
+e dividendo per il volume di solvente (convertito in litri) si ottiene la concentrazione
+$$
+    M = \frac{0.205\,mol}{0.1\,l} \approx 2\,M
+$$
+\textbf{Esercizio} \\
+A quale volume bisogna diluire $10\,ml$ di $HCl$ $6\,M$ per ottenere $HCl$ $0.5\,M$? \\ \\
+L'incognita è il volume finale della soluzione. Per la formula della molarità, possiamo ottenere il volume conoscendo la concentrazione e il numero di moli. \\
+Per il numero di moli è importante notare che, aggiungere acqua alla soluzione ne cambia la concentrazione, ma non cambia assolutamente il numero di moli di soluto. Quindi per sapere il numero di
+moli nella soluzione finale basta calcolare il numero di moli nella soluzione iniziale:
+$$
+    n_f = n_i = V_i\cdot M_i = 0.01\,ml \cdot 6\,M = 0.06\,mol
+$$
+da cui si trova il volume che deve avere la soluzione finale per avere la concentrazione richiesta:
+$$
+    V_f = \frac{0.06\,mol}{0.5\,M} = 0.12\,l = 120\,ml
+$$
+\subsection{Miscelazione di soluzioni}
+Quando si miscelano due soluzioni aventi lo stesso soluto, in generale si ottiene una nuova soluzione avente diversa concentrazione. \\
+Per calcolare la nuova concentrazione è sufficiente considerare che miscelare le due soluzioni vuol dire sommare il numero di moli contenuto in ciascuna delle soluzioni, e anche i volumi. \\ \\
+\textbf{Esempio} \\
+Si prendano due soluzioni di $HCl$, una di $100\,ml$ con molarità $0.1\,M$ e una di $300\,ml$ con molarità $0.2\,M$. \\
+Il numero totale di moli vale 
+$$
+    n = n_1 + n_2 = M_1V_1 + M_2V_2 = 0.1\cdot 0.1 + 0.2\cot 0.3 = 0.07\,mol
+$$
+mentre il volume totale della soluzione è
+$$
+    V = V_1 + V_2 = 100 + 300 = 400\,ml
+$$
+La concentrazione finale risulta quindi:
+$$
+    M = \frac{0.07\,mol}{0.4\,l} = 0.175\,M
+$$
+\section{Equilibrio chimico}
+L'equilibrio chimico è una condizione \textit{dinamica} che si instaura quando la velocità della reazione diretta e quella della reazione inversa sono uguali. E' importante specificare che l'equilibrio
+chimico è una condizione dinamica, perchè anche se macroscopicamente sembra che il sistema sia in uno stato stazionario, non è quello che avviene microscopicamente. \\
+L'esempio più semplice è quello dello scioglimento di una quantità di sale in un contenitore pieno di acqua, in cui si ha la formazione del corpo di fondo (sale non disciolto che si deposita sul 
+fondo del contenitore). Microscopicamente si vedrebbe una certa quantità di sale che viene disciolta nell'acqua, e una quantità uguale di sale disciolto che precipita e contribuisce a formare il corpo 
+di fondo. All'equilibrio chimico questi due processi avvengono allo stesso modo, mantenendo quindi invariato il sistema macroscopicamente.
+\subsection{Costante di equilibrio e quoziente di reazione} 
+\section{pH}
+\section{Termochimica}
+\section{Chimica organica}
+
+
+\end{document}
