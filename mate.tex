@@ -6,5 +6,68 @@
 
 \begin{document}
 \maketitle
-
+\section{Probabilita' e statistica}
+\subsection{Probabilita'}
+Si consideri una certa operazione, quale l'estrazione di una carta da un mazzo o il lancio di un dato. Ci sono tanti possibili risultati per queste operazioni. L'insieme di tutti i risultati possibili forma lo \textit{spazio campionario} $\Omega$, mentre uno di questi possibili risultati prende il nome di evento, e rappresenta quindi un sottoinsieme dello spazio campionario. \\
+La probabilita' associata a un evento e' data da
+$$
+	p(E) = \frac{|E|}{|\Omega|}
+$$
+dove $|E|$ indica il numero di casi possibili che rientrano nella descrizione dell'evento e $|\Omega|$ sono tutti i casi possibili. \\
+Ad esempio, nel caso dell'estrazione della carta da un mazzo di 52 carte, l'evento "Esce una carta con il numero 4" e' verificato in 4 casi dei 52 possibili (un caso per ogni seme). Ne risulta che questo evento ha probabilita' 
+$$
+	p(E) = \frac{4}{52} = 1/13 
+$$
+\subsection{Statistica}
+\subsection{Combinatoria}
+La combinatoria consiste nel calcolo di tutti i possibili risultato di operazioni quali lanci di dadi o estrazioni di numeri. \\
+Si distinguono intanto i concetti di disposizioni, permutazioni e combinazioni:
+\begin{itemize}
+	\item Le disposizioni sono sequenze ordinate di oggetti (lettere, numeri o altro). Si parla di disposizione quando si ha un numero $N$ di oggetti da dividere in un numero $k$ di posti, con $k<N$, e l'ordine di estrazione e' importante. Un esempio di disposizione puo' essere il sorteggio di 4 cifre per determinare un codice numerico o una password.
+	\item Le permutazioni sono disposizioni in cui $k = N$, quindi in cui tutti i numeri devono venir estratti. Un esempio e' quello del calcolo degli anagrammi di una parola. L'ordine delle lettere in una parola e' ovviamente importante, quindi ogni permutazione indica un anagramma diverso, ma tutte le lettere devono essere presenti nella sequenza perche' questa sia un anagramma di tale parola.
+	\item Le combinazioni sono estrazioni non ordinate di elementi. Quindi a differenza delle disposizioni e delle permutazioni, l'ordine di uscita degli elementi non e' importante. Prendendo ad esempio il caso degli anagrammi di una parola, tutti gli anagrammi sono formati combinando le stesse lettere, quindi rappresentano la stessa combinazione (anche se sono diverse permutazioni). Un esempio di combinazione e' l'estrazione di alunni da interrogare da parte di un professore, perche' allo studente non interessa se viene chiamato per primo o per ultimo, gli tocca comunque essere interrogato. 
+\end{itemize}
+Dopo aver definito permutazioni, disposizioni e combinazioni e' fondamentale saperle calcolare nei vari casi. \\
+Per il calcolo delle disposizioni e' utile un esempio. \\
+\textbf{Esempio} \\
+Vogliamo calcolare quante sequenze di 5 lettere dell'alfabeto e' possibile avere. Prendiamo l'alfabeto inglese, quindi 26 lettere. \\
+Per la prima lettera possiamo avere una qualunque delle 26 lettere, quindi le possibilita' per la sua scelta sono 26. Per ognuna di queste 26 possibili prime lettere, le lettere che possono prendere il secondo posto sono, di nuovo, 26. Quindi le disposizioni possibili di 2 lettere sono $26\times 26 = 676$. Si estende lo stesso discorso e si ottiene che per 5 lettere le disposizioni possibili sono $26^5 = 11881376$. \\
+Quindi in un caso come questo si ha 
+$$
+	D_{N,k} = N^k
+$$
+Un caso diverso si avrebbe se una lettera scelta in precedenza non potesse essere scelta in seguito. Ad esempio, estraendo i numeri nel gioco della tombola, un numero gia' pescato non puo' essere ripescato, quindi a ogni estrazione diminuisce il numero di numeri estraibili. \\
+Nel caso della sequenza di 5 lettere quindi, il numero di discosizioni \textit{senza ripetizione} e'
+$$
+	D_{N,k} = N(N-1)(N-2)(N-3)(N-4)
+$$  
+Passiamo ora alle permutazioni. Come detto in precedenza, nelle permutazioni si ha che $k = N$. Quindi il numero di permutazioni con ripetizione e'
+$$
+	P_N + N^N
+$$
+mentre il numero di permutazioni senza ripetizione e'
+$$
+	P_N = N!
+$$
+Ci sono infine le combinazioni. Queste si calcolano mediante il coefficiente binomiale, che e' definito come
+$$
+	\begin{pmatrix}
+		N \\
+		k
+	\end{pmatrix} = \frac{N!}{k!(N-k)!}
+$$
+La combinazione senza ripetizione di $N$ elementi per $k$ posti e'
+$$
+	C_{N,k} = \begin{pmatrix}
+		N \\
+		k
+	\end{pmatrix}  
+$$
+La combinazione con ripetizione invece e' data dalla formula
+$$
+	C_{N,k} = \begin{pmatrix}
+		N + k - 1 \\
+		k
+	\end{pmatrix}  
+$$
 \end{document}
