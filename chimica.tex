@@ -4,6 +4,8 @@
 \author{Simone Balducci}
 \date{}
 
+\usepackage{amssymb}
+
 \begin{document}
 \maketitle
 
@@ -166,6 +168,47 @@ Il pH e il pOH di una soluzione sono legati dalla relazione:
 $$
 	ph + pOH = 14
 $$
+\subsection{Acidi/basi forti e deboli}
+Gli acidi e le basi si dividono in forti e deboli in base al loro grado di dissociazione. \\
+Gli acidi e le basi forti si dissociano completamente quando disciolti in acqua
+$$
+	HCl \rightarrow H^+ + Cl^-
+$$
+$$
+	NaOH \rightarrow Na^+ + OH^-
+$$
+Gli acidi e le basi deboli invece si dissociano solo parzialmente, e instaurano quindi una condizione di equilibrio con i prodotti di dissociazione, che prendono il nome di acidi e basi coniugati. \\
+Prendendo ad esempio la reazione dell'acido acetico
+$$
+	CH_3COOH + H_2O \rightleftarrows CH_3COO^- + H^+
+$$
+il composto $CH_3COO^-$ e' la base coniugata all'acido acetico. Essendo questa reazione all'equilibrio, essa ha una costante di equilibrio, che prende il nome di costante di equilibrio acida, $Ka$
+$$
+	Ka = \frac{[H^+][CH_3COO^-]}{[CH_3COOH]}
+$$
+e questa costante e' caratteristica per ogni acido. \\
+Il nome acido debole suggerisce che questi si dissocino poco, quindi liberino piccole quantita' dello ione $H^+$, la cui concentrazione sara' quindi molto piccola. Questo vuol dire che in generale le costanti acide hanno valori molto piccoli, dell'ordine di $10^{-6}$ o inferiori. \\ 
+Il discorso per le basi deboli e' completamente anologo. \\ \\ 
+Essendo la dissociazione degli acidi e delle basi solo parziale, non si puo' usare la stessa formula degli acidi e delle basi forti per il calcolo del pH e del pOH. Facendo i calcoli e mediante delle semplificazioni (in generale sempre applicabili) si ottengono le seguenti formule:
+$$
+	pH = -\log(Ca\cdot Ka)
+$$
+$$
+	pOH = -\log(Cb\cdot Kb)
+$$
+dove $Ca$ e $Cb$ sono rispettivamente le concentrazioni dell'acido o della base debole.
+\subsection{Soluzioni tampone}
+Le soluzioni tampone sono soluzioni che si oppongono alla variazione del pH per piccole aggiunte di acidi o basi. Si puo' formare una soluzione tampone combinando un acido debole con un suo sale oppure una base debole e un suo sale. \\
+Prendiamo ad esempio una soluzione di un generico acido debole $HA$ (questo potrebbe essere l'acido acetico, $CH_3COOH$) e un suo sale $MA$ (ricordiamo che un sale si ottiene combinando uno ione metallico $M^+$ con un radicale negativo $A^-$). Una volta messi in acqua, questi due composti danno luogo alle seguenti reazioni:
+$$
+	HA + H_2O \rightleftarrows H_3O^+ + A^-
+$$
+$$
+	MA \rightarrow M^+ + A^-
+$$
+dove la prima e' una classica dissociazione acida debole, che e' una reazione all'equilibrio, mentre la seconda e' la dissociazione totale che i sali presentano quando vengono disciolti in acqua. \\
+La seconda reazione aumenta la concentrazione dello ione $A^-$ nella soluzione, e questo fa retrocedere la dissociazione dell'acido. \\
+Se ora andiamo ad aggiungere un acido forte alla soluzione, come ad esempio l'acido cloridrico $HCl$, questo si dissocera' completamente e liberera' quindi ioni $H^+$. Questi ioni andrebbero ad abbassare il pH e a rendere la soluzione piu' acida, se non fosse per lo ione $A^-$, che per via della dissociazione del sale e' presente in grande quantita'. Lo ione $A^-$ va a legarsi con lo ione $H^+$, e questo impedisce che il pH si alzi di troppo.
 \section{Termochimica}
 La termochimica studia l'energia coinvolta nelle reazioni chimiche per determinare se queste siano favorite o no. 
 

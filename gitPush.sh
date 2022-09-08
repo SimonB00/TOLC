@@ -1,4 +1,4 @@
-#!bin/zsh
+#!usr/bin/bash
 
 echo "Write a commit message"
 
